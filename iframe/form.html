@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: rgba(235, 224, 245, 0.945);">
+    <div class="d-flex justify-content-center align-items-center vh-100 ">
+        <form id="forma">
+            <label for="">Email:</label><br>
+            <input type="email" placeholder="enter your email"><br>
+            <label for="">Password:</label><br>
+            <input type="password" placeholder="password"> <br><br>
+            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Singup</button>
+        </form>
+        <div>
+            <div class="modal" tabindex="-1" id="exampleModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Form Registration</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           <form action="">
+                            <label for="">Name:</label><br>
+                            <input type="text"><br>
+                            <label for="">Email:</label><br>
+                            <input type="email"><br>
+                            <label for="">Address:</label><br>
+                            <textarea name="" id=""></textarea><br>
+                            <label for="">Number:</label><br>
+                            <input type="tel"><br>
+                            <label for="">Upload Image:</label><br>
+                            <input type="file"><br> <br>
+                            <label for="">City:</label>
+                            <select name="" id="">
+                                <option value="">Dhaka</option>
+                                <option value="">CTG</option>
+                                <option value="">Sylhet</option>
+                            </select> <br> <br>
+                            <label>Gender:</label>
+                            <input type="radio" name="g">Male
+                            <input type="radio" name="g">Female
+                            <input type="radio" name="g">Others <br> <br>
+                            <label for="">Subject:</label>
+                            <input type="checkbox">HTML
+                            <input type="checkbox">MySQL
+                            <input type="checkbox">SQL
+                            <input type="checkbox">JAVA
+
+                           </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Singup</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../bootstrap-5.3.8-dist/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
